@@ -19,6 +19,10 @@ public class ShoppingCart {
 		return userCart.removeIf(i -> (i.itemId == item.itemId));
 	}
 	
+	public void deleteAll() {
+		this.userCart = new ArrayList<>();
+	}
+	
 	public String toString() {
 		String output = this.user.username+" cart:\n";
 		for (Item i : this.userCart) 
