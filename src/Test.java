@@ -11,6 +11,7 @@ public class Test {
 		Item items[] = {new Item ("Banana", 1), new Item ("Chair", 2), new Item ("Sofa", 3)};
 		User users[] = {new User("UnknownUser", 2769)};
 		for (Item i : items) {
+			
 			users[0].sc.addItemToCart(i);
 		}
 		System.out.println(users[0].sc.toString());
